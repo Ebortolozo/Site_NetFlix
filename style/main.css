@@ -1,0 +1,107 @@
+:root {
+    --vermelho:#E50914;
+    --preto: #141414;
+}
+
+@font-face {
+    font-family: james;
+    src: local(james), url(../fonts/KAISG___.TTF);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+header .conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+body {
+    background-color: var(--preto);  
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.conteiner .logo {
+    color: var(--vermelho);
+    margin-left: 20px;
+    font-family: 'Arial Black', times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color:#FFF;
+}
+
+.anime_principal {
+    font-size:16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.90)100%), url('/WebDeveloper_Projects/Curso Web_Dev/Site_Netflix/img/pinto.jpg');
+    height: 400px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.titulo {
+    font-size: 50px;
+    font-family: james;
+    letter-spacing: 7px;
+    margin-top: 3%;
+
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 7px;
+}
+
+.anime_principal .conteiner {
+    margin-left: 20px;
+    width: 60%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel {
+    margin-top: 8px;
+}
